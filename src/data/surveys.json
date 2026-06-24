@@ -1,0 +1,1776 @@
+{
+  "detection_questions": [
+    {
+      "id": "q0_0",
+      "category": "all", 
+      "text": "What's your gender?",
+      "ui": "radio",
+      "options": [
+        {"id": "male", "label": "Male", "score": 0, "tags": ["demographic", "gender"]},
+        {"id": "female", "label": "Female", "score": 0, "tags": ["demographic", "gender"]},
+        {"id": "non_binary", "label": "Non-binary", "score": 0, "tags": ["demographic", "gender"]},
+        {"id": "prefer_not", "label": "Prefer not to say", "score": 0, "tags": ["demographic", "gender"]}
+      ],
+      "weight": 0,
+      "required": true,
+      "follow_up": null,
+      "crisis": false
+    },
+    {
+      "id": "q0_1",
+      "category": "all",
+      "text": "How long were you / have you been with this person?",
+      "ui": "radio",
+      "options": [
+        {"id": "o1", "label": "Less than 3 months", "score": 1, "tags": ["duration", "context"]},
+        {"id": "o2", "label": "3-12 months", "score": 2, "tags": ["duration", "context"]},
+        {"id": "o3", "label": "1-3 years", "score": 3, "tags": ["duration", "context"]},
+        {"id": "o4", "label": "3-7 years", "score": 4, "tags": ["duration", "context"]},
+        {"id": "o5", "label": "7+ years", "score": 4, "tags": ["duration", "context"]}
+      ],
+      "weight": 1,
+      "required": true,
+      "follow_up": null,
+      "crisis": false
+    },
+    {
+      "id": "q0_2",
+      "category": "all",
+      "text": "Do you live with them / did you live together?",
+      "ui": "radio",
+      "options": [
+        {"id": "o1", "label": "Yes, full-time", "score": 4, "tags": ["living_situation"]},
+        {"id": "o2", "label": "Sometimes / part-time", "score": 3, "tags": ["living_situation"]},
+        {"id": "o3", "label": "No, but close", "score": 2, "tags": ["living_situation"]},
+        {"id": "o4", "label": "Long-distance", "score": 1, "tags": ["living_situation"]},
+        {"id": "o5", "label": "Separated / moved out", "score": 0, "tags": ["living_situation"]}
+      ],
+      "weight": 1,
+      "required": true,
+      "follow_up": null,
+      "crisis": false
+    },
+    {
+      "id": "q0_3",
+      "category": "all",
+      "text": "Is the relationship / was it exclusive?",
+      "ui": "radio",
+      "options": [
+        {"id": "o1", "label": "Yes, exclusive", "score": 4, "tags": ["commitment_level"]},
+        {"id": "o2", "label": "Mostly", "score": 3, "tags": ["commitment_level"]},
+        {"id": "o3", "label": "Not sure", "score": 2, "tags": ["commitment_level"]},
+        {"id": "o4", "label": "It was open / sometimes", "score": 1, "tags": ["commitment_level"]},
+        {"id": "o5", "label": "Not exclusive", "score": 0, "tags": ["commitment_level"]}
+      ],
+      "weight": 1,
+      "required": true,
+      "follow_up": null,
+      "crisis": false
+    }
+  ],
+  "surveys": {
+    "single": [
+      {
+        "id": "single_q1",
+        "category": "single",
+        "text": "Are you actively looking for a serious relationship or keeping things casual?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Serious", "score": 4, "tags": ["goals_alignment"]},
+          {"id": "o2", "label": "Leaning serious", "score": 3, "tags": ["goals_alignment"]},
+          {"id": "o3", "label": "Unsure", "score": 2, "tags": ["goals_alignment"]},
+          {"id": "o4", "label": "Mostly casual", "score": 1, "tags": ["goals_alignment"]},
+          {"id": "o5", "label": "Not looking", "score": 0, "tags": ["goals_alignment"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "single_q2",
+        "category": "single",
+        "text": "How often do you feel comfortable sharing your real feelings with this person?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Always", "score": 4, "tags": ["communication"]},
+          {"id": "o2", "label": "Often", "score": 3, "tags": ["communication"]},
+          {"id": "o3", "label": "Sometimes", "score": 2, "tags": ["communication"]},
+          {"id": "o4", "label": "Rarely", "score": 1, "tags": ["communication"]},
+          {"id": "o5", "label": "Never", "score": 0, "tags": ["communication"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "single_q3",
+        "category": "single",
+        "text": "How often do you get clear plans (dates, next steps) from them?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Often", "score": 4, "tags": ["reliability"]},
+          {"id": "o2", "label": "Sometimes", "score": 3, "tags": ["reliability"]},
+          {"id": "o3", "label": "Only when I ask", "score": 2, "tags": ["reliability"]},
+          {"id": "o4", "label": "Rarely", "score": 1, "tags": ["reliability"]},
+          {"id": "o5", "label": "Never", "score": 0, "tags": ["reliability"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "single_q4",
+        "category": "single",
+        "text": "How well do your life goals (kids, career, living place) match?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Very well", "score": 4, "tags": ["future_alignment"]},
+          {"id": "o2", "label": "Mostly", "score": 3, "tags": ["future_alignment"]},
+          {"id": "o3", "label": "Don't know", "score": 2, "tags": ["future_alignment"]},
+          {"id": "o4", "label": "Some mismatch", "score": 2, "tags": ["future_alignment"]},
+          {"id": "o5", "label": "Big differences", "score": 1, "tags": ["future_alignment"]}
+        ],
+        "weight": 1.5,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "single_q5",
+        "category": "single",
+        "text": "Has this person shown repeated honesty and openness?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Always", "score": 4, "tags": ["trust"]},
+          {"id": "o2", "label": "Usually", "score": 3, "tags": ["trust"]},
+          {"id": "o3", "label": "Not sure", "score": 2, "tags": ["trust"]},
+          {"id": "o4", "label": "Sometimes", "score": 2, "tags": ["trust"]},
+          {"id": "o5", "label": "Often lies", "score": 0, "tags": ["trust"], "inverted": true}
+        ],
+        "weight": 1.5,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "single_q6",
+        "category": "single",
+        "text": "How often do you have deep conversations (not small talk)?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Daily / often", "score": 4, "tags": ["emotional_intimacy"]},
+          {"id": "o2", "label": "Weekly", "score": 3, "tags": ["emotional_intimacy"]},
+          {"id": "o3", "label": "Monthly", "score": 2, "tags": ["emotional_intimacy"]},
+          {"id": "o4", "label": "Rarely", "score": 1, "tags": ["emotional_intimacy"]},
+          {"id": "o5", "label": "Never", "score": 0, "tags": ["emotional_intimacy"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "single_q7",
+        "category": "single",
+        "text": "How calm/healthy are the arguments (do they end with understanding)?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Calm + resolved", "score": 4, "tags": ["conflict"]},
+          {"id": "o2", "label": "Usually resolved", "score": 3, "tags": ["conflict"]},
+          {"id": "o3", "label": "Mixed", "score": 2, "tags": ["conflict"]},
+          {"id": "o4", "label": "Often unresolved", "score": 1, "tags": ["conflict"]},
+          {"id": "o5", "label": "Explosive / scary", "score": 0, "tags": ["conflict"]}
+        ],
+        "weight": 1.5,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "single_q8",
+        "category": "single",
+        "text": "Do they introduce you to close friends or family?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Yes, quickly", "score": 4, "tags": ["social_integration"]},
+          {"id": "o2", "label": "Yes, slowly", "score": 3, "tags": ["social_integration"]},
+          {"id": "o3", "label": "Not yet but planned", "score": 2, "tags": ["social_integration"]},
+          {"id": "o4", "label": "Avoids it", "score": 1, "tags": ["social_integration"]},
+          {"id": "o5", "label": "No & hides me", "score": 0, "tags": ["social_integration"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "single_q9",
+        "category": "single",
+        "text": "How comfortable do you feel with physical/romantic chemistry?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Very satisfied", "score": 4, "tags": ["sexual_intimacy"]},
+          {"id": "o2", "label": "Mostly good", "score": 3, "tags": ["sexual_intimacy"]},
+          {"id": "o3", "label": "Sometimes good", "score": 2, "tags": ["sexual_intimacy"]},
+          {"id": "o4", "label": "Unsatisfied", "score": 1, "tags": ["sexual_intimacy"]},
+          {"id": "o5", "label": "Not applicable / not intimate", "score": 0, "tags": ["sexual_intimacy"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "single_q10",
+        "category": "single",
+        "text": "Have you seen controlling or jealous behavior?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Never", "score": 4, "tags": ["abuse_risk"]},
+          {"id": "o2", "label": "Rarely", "score": 3, "tags": ["abuse_risk"]},
+          {"id": "o3", "label": "Sometimes", "score": 2, "tags": ["abuse_risk"]},
+          {"id": "o4", "label": "Often", "score": 0, "tags": ["abuse_risk"], "inverted": true},
+          {"id": "o5", "label": "Yes—serious", "score": 0, "tags": ["abuse_risk"], "crisis": true}
+        ],
+        "weight": 1.5,
+        "required": true,
+        "follow_up": {
+          "trigger": "o5",
+          "action": "show_safety_resources"
+        },
+        "crisis": true
+      },
+      {
+        "id": "single_q11",
+        "category": "single",
+        "text": "Do you feel that this person supports your personal growth (work, hobbies, friends)?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Always", "score": 4, "tags": ["support"]},
+          {"id": "o2", "label": "Often", "score": 3, "tags": ["support"]},
+          {"id": "o3", "label": "Sometimes", "score": 2, "tags": ["support"]},
+          {"id": "o4", "label": "Rarely", "score": 1, "tags": ["support"]},
+          {"id": "o5", "label": "Never", "score": 0, "tags": ["support"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "single_q12",
+        "category": "single",
+        "text": "How often does this person make plans with you that you enjoy?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Often", "score": 4, "tags": ["shared_activities"]},
+          {"id": "o2", "label": "Sometimes", "score": 3, "tags": ["shared_activities"]},
+          {"id": "o3", "label": "I make most plans", "score": 2, "tags": ["shared_activities"]},
+          {"id": "o4", "label": "Rarely", "score": 1, "tags": ["shared_activities"]},
+          {"id": "o5", "label": "Never", "score": 0, "tags": ["shared_activities"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "single_q13",
+        "category": "single",
+        "text": "Have you ever felt disrespected (comments, actions) in this relationship?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Never", "score": 4, "tags": ["respect"]},
+          {"id": "o2", "label": "Once or rare", "score": 3, "tags": ["respect"]},
+          {"id": "o3", "label": "Sometimes", "score": 2, "tags": ["respect"]},
+          {"id": "o4", "label": "Often", "score": 0, "tags": ["respect"], "inverted": true},
+          {"id": "o5", "label": "Yes—regularly", "score": 0, "tags": ["respect"], "trust_issue": true}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "single_q14",
+        "category": "single",
+        "text": "If you could read their mind right now, what would scare you most to discover?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Nothing - I trust them completely", "score": 4, "tags": ["trust", "security"]},
+          {"id": "o2", "label": "They're comparing me to their ex", "score": 2, "tags": ["insecurity", "comparison"]},
+          {"id": "o3", "label": "They're not as interested as they seem", "score": 1, "tags": ["rejection_fear"]},
+          {"id": "o4", "label": "They're talking to someone else", "score": 0, "tags": ["betrayal_fear"]},
+          {"id": "o5", "label": "They find me boring/unattractive", "score": 1, "tags": ["self_worth"]}
+        ],
+        "weight": 1.5,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "single_q15",
+        "category": "single",
+        "text": "How clear are you about what you want next from this relationship?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Very clear", "score": 4, "tags": ["intent_clarity"]},
+          {"id": "o2", "label": "Mostly clear", "score": 3, "tags": ["intent_clarity"]},
+          {"id": "o3", "label": "Somewhat", "score": 2, "tags": ["intent_clarity"]},
+          {"id": "o4", "label": "Not clear", "score": 1, "tags": ["intent_clarity"]},
+          {"id": "o5", "label": "I don't want to continue", "score": 0, "tags": ["intent_clarity"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "single_q16",
+        "category": "single",
+        "text": "How often do you feel heard when you ask for change or help?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Always", "score": 4, "tags": ["listening"]},
+          {"id": "o2", "label": "Often", "score": 3, "tags": ["listening"]},
+          {"id": "o3", "label": "Sometimes", "score": 2, "tags": ["listening"]},
+          {"id": "o4", "label": "Rarely", "score": 1, "tags": ["listening"]},
+          {"id": "o5", "label": "Never", "score": 0, "tags": ["listening"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "single_q17",
+        "category": "single",
+        "text": "How honest do you feel their future talk is (plans, marriage, kids)?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Very honest", "score": 4, "tags": ["future_alignment"]},
+          {"id": "o2", "label": "Mostly real", "score": 3, "tags": ["future_alignment"]},
+          {"id": "o3", "label": "Vague", "score": 2, "tags": ["future_alignment"]},
+          {"id": "o4", "label": "Not discussed", "score": 1, "tags": ["future_alignment"]},
+          {"id": "o5", "label": "Often lies/promises", "score": 0, "tags": ["future_alignment"], "inverted": true}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "single_q18",
+        "category": "single",
+        "text": "How often do they show appreciation or small gratitude?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Daily", "score": 4, "tags": ["appreciation"]},
+          {"id": "o2", "label": "Weekly", "score": 3, "tags": ["appreciation"]},
+          {"id": "o3", "label": "Sometimes", "score": 2, "tags": ["appreciation"]},
+          {"id": "o4", "label": "Rarely", "score": 1, "tags": ["appreciation"]},
+          {"id": "o5", "label": "Never", "score": 0, "tags": ["appreciation"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "single_q19",
+        "category": "single",
+        "text": "Have you noticed repeated patterns from past dates (same issue repeating)?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "No", "score": 4, "tags": ["history_pattern"]},
+          {"id": "o2", "label": "One pattern", "score": 2, "tags": ["history_pattern"]},
+          {"id": "o3", "label": "Several patterns", "score": 1, "tags": ["history_pattern"]},
+          {"id": "o4", "label": "Yes—big pattern", "score": 0, "tags": ["history_pattern"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "single_q20",
+        "category": "single",
+        "text": "What is the main thing you want from this relationship next?",
+        "ui": "text",
+        "options": [],
+        "weight": 0,
+        "required": false,
+        "follow_up": null,
+        "crisis": false,
+        "help_text": "Optional - short answer (max 80 characters)"
+      }
+    ],
+    "committed": [
+      {
+        "id": "committed_q4",
+        "category": "committed",
+        "text": "How often do you talk about important topics (money, children, career)?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Weekly", "score": 4, "tags": ["communication"]},
+          {"id": "o2", "label": "Monthly", "score": 3, "tags": ["communication"]},
+          {"id": "o3", "label": "Rarely", "score": 1, "tags": ["communication"]},
+          {"id": "o4", "label": "Never", "score": 0, "tags": ["communication"]},
+          {"id": "o5", "label": "Only in fights", "score": 0, "tags": ["communication"]}
+        ],
+        "weight": 1.5,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "committed_q5",
+        "category": "committed",
+        "text": "How do you normally resolve arguments?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Talk calmly until fixed", "score": 4, "tags": ["conflict_resolution"]},
+          {"id": "o2", "label": "Agree to disagree", "score": 3, "tags": ["conflict_resolution"]},
+          {"id": "o3", "label": "Ignore it", "score": 2, "tags": ["conflict_resolution"]},
+          {"id": "o4", "label": "Yell / silent treatment", "score": 0, "tags": ["conflict_resolution"]}
+        ],
+        "weight": 1.5,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "committed_q6",
+        "category": "committed",
+        "text": "Is household work shared fairly?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Yes, fair", "score": 4, "tags": ["division_of_labor"]},
+          {"id": "o2", "label": "Mostly fair", "score": 3, "tags": ["division_of_labor"]},
+          {"id": "o3", "label": "Sometimes unfair", "score": 2, "tags": ["division_of_labor"]},
+          {"id": "o4", "label": "Mostly my job", "score": 1, "tags": ["division_of_labor"]},
+          {"id": "o5", "label": "My partner does it", "score": 4, "tags": ["division_of_labor"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "committed_q7",
+        "category": "committed",
+        "text": "How often do you feel emotionally supported during hard times?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Always", "score": 4, "tags": ["support"]},
+          {"id": "o2", "label": "Often", "score": 3, "tags": ["support"]},
+          {"id": "o3", "label": "Sometimes", "score": 2, "tags": ["support"]},
+          {"id": "o4", "label": "Rarely", "score": 1, "tags": ["support"]},
+          {"id": "o5", "label": "Never", "score": 0, "tags": ["support"]}
+        ],
+        "weight": 1.5,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "committed_q8",
+        "category": "committed",
+        "text": "How often do you have time together (date night / shared activity)?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Weekly", "score": 4, "tags": ["shared_time"]},
+          {"id": "o2", "label": "2-3x month", "score": 3, "tags": ["shared_time"]},
+          {"id": "o3", "label": "Monthly", "score": 2, "tags": ["shared_time"]},
+          {"id": "o4", "label": "Less", "score": 1, "tags": ["shared_time"]},
+          {"id": "o5", "label": "Never", "score": 0, "tags": ["shared_time"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "committed_q9",
+        "category": "committed",
+        "text": "How often do financial disagreements cause stress?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Never", "score": 4, "tags": ["financial_conflict"]},
+          {"id": "o2", "label": "Rarely", "score": 3, "tags": ["financial_conflict"]},
+          {"id": "o3", "label": "Sometimes", "score": 2, "tags": ["financial_conflict"]},
+          {"id": "o4", "label": "Often", "score": 0, "tags": ["financial_conflict"], "inverted": true},
+          {"id": "o5", "label": "Constantly", "score": 0, "tags": ["financial_conflict"], "inverted": true}
+        ],
+        "weight": 1.5,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "committed_q10",
+        "category": "committed",
+        "text": "Do you trust your partner with important secrets / boundaries?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Completely", "score": 4, "tags": ["trust"]},
+          {"id": "o2", "label": "Mostly", "score": 3, "tags": ["trust"]},
+          {"id": "o3", "label": "Partly", "score": 2, "tags": ["trust"]},
+          {"id": "o4", "label": "Not much", "score": 1, "tags": ["trust"]},
+          {"id": "o5", "label": "No", "score": 0, "tags": ["trust"]}
+        ],
+        "weight": 1.5,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "committed_q11",
+        "category": "committed",
+        "text": "When you're alone, what's your most honest feeling about your partner?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Deep gratitude - I'm lucky to have them", "score": 4, "tags": ["genuine_love"]},
+          {"id": "o2", "label": "Contentment - we're good together", "score": 3, "tags": ["satisfaction"]},
+          {"id": "o3", "label": "Uncertainty - wondering if this is right", "score": 2, "tags": ["doubt"]},
+          {"id": "o4", "label": "Frustration - they're not who I thought", "score": 1, "tags": ["disappointment"]},
+          {"id": "o5", "label": "Trapped - but leaving feels impossible", "score": 0, "tags": ["trapped"]}
+        ],
+        "weight": 1.5,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "committed_q12",
+        "category": "committed",
+        "text": "Are your life plans (kids, location, career tradeoffs) on the same page?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Yes", "score": 4, "tags": ["future_alignment"]},
+          {"id": "o2", "label": "Mostly", "score": 3, "tags": ["future_alignment"]},
+          {"id": "o3", "label": "Some differences", "score": 2, "tags": ["future_alignment"]},
+          {"id": "o4", "label": "Big differences", "score": 1, "tags": ["future_alignment"]},
+          {"id": "o5", "label": "Opposite", "score": 0, "tags": ["future_alignment"]}
+        ],
+        "weight": 1.5,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "committed_q13",
+        "category": "committed",
+        "text": "How open are you about money and debts?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Very open", "score": 4, "tags": ["financial_transparency"]},
+          {"id": "o2", "label": "Mostly open", "score": 3, "tags": ["financial_transparency"]},
+          {"id": "o3", "label": "Some secrets", "score": 2, "tags": ["financial_transparency"]},
+          {"id": "o4", "label": "Hidden debts", "score": 0, "tags": ["financial_transparency"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "committed_q14",
+        "category": "committed",
+        "text": "When one of you is stressed, how does the other react?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Comforting", "score": 4, "tags": ["empathy"]},
+          {"id": "o2", "label": "Helpful", "score": 3, "tags": ["empathy"]},
+          {"id": "o3", "label": "Neutral", "score": 2, "tags": ["empathy"]},
+          {"id": "o4", "label": "Dismissive", "score": 1, "tags": ["empathy"]},
+          {"id": "o5", "label": "Blames", "score": 0, "tags": ["empathy"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "committed_q15",
+        "category": "committed",
+        "text": "Have there been trust breaks (secrets, cheating) in this relationship?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "No", "score": 4, "tags": ["trust_history"]},
+          {"id": "o2", "label": "Small issues resolved", "score": 2, "tags": ["trust_history"]},
+          {"id": "o3", "label": "Big issue but healed", "score": 1, "tags": ["trust_history"]},
+          {"id": "o4", "label": "Unresolved betrayal", "score": 0, "tags": ["trust_history"]}
+        ],
+        "weight": 1.5,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "committed_q16",
+        "category": "committed",
+        "text": "How often do you make decisions together?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Always", "score": 4, "tags": ["decision_making"]},
+          {"id": "o2", "label": "Often", "score": 3, "tags": ["decision_making"]},
+          {"id": "o3", "label": "Sometimes", "score": 2, "tags": ["decision_making"]},
+          {"id": "o4", "label": "Rarely", "score": 1, "tags": ["decision_making"]},
+          {"id": "o5", "label": "Never", "score": 0, "tags": ["decision_making"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "committed_q17",
+        "category": "committed",
+        "text": "How comfortable are you asking for change (and seeing it happen)?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Very", "score": 4, "tags": ["change_response"]},
+          {"id": "o2", "label": "Mostly", "score": 3, "tags": ["change_response"]},
+          {"id": "o3", "label": "Sometimes", "score": 2, "tags": ["change_response"]},
+          {"id": "o4", "label": "Rarely", "score": 1, "tags": ["change_response"]},
+          {"id": "o5", "label": "Never", "score": 0, "tags": ["change_response"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "committed_q18",
+        "category": "committed",
+        "text": "How satisfied are you with physical/romantic life?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Very", "score": 4, "tags": ["sexual_intimacy"]},
+          {"id": "o2", "label": "Mostly", "score": 3, "tags": ["sexual_intimacy"]},
+          {"id": "o3", "label": "Sometimes", "score": 2, "tags": ["sexual_intimacy"]},
+          {"id": "o4", "label": "Rarely", "score": 1, "tags": ["sexual_intimacy"]},
+          {"id": "o5", "label": "Not at all", "score": 0, "tags": ["sexual_intimacy"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "committed_q19",
+        "category": "committed",
+        "text": "Do outside family/friends often interfere in your decisions?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "No", "score": 4, "tags": ["external_pressure"]},
+          {"id": "o2", "label": "Sometimes", "score": 2, "tags": ["external_pressure"]},
+          {"id": "o3", "label": "Often", "score": 0, "tags": ["external_pressure"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "committed_q18",
+        "category": "committed",
+        "text": "How satisfied are you with sexual frequency/quality?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Very", "score": 4, "tags": ["sexual_intimacy"]},
+          {"id": "o2", "label": "Mostly", "score": 3, "tags": ["sexual_intimacy"]},
+          {"id": "o3", "label": "Sometimes", "score": 2, "tags": ["sexual_intimacy"]},
+          {"id": "o4", "label": "Rarely", "score": 1, "tags": ["sexual_intimacy"]},
+          {"id": "o5", "label": "Not at all", "score": 0, "tags": ["sexual_intimacy"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "committed_q19",
+        "category": "committed",
+        "text": "Do outside family/friends often interfere in your decisions?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "No", "score": 4, "tags": ["external_pressure"]},
+          {"id": "o2", "label": "Sometimes", "score": 2, "tags": ["external_pressure"]},
+          {"id": "o3", "label": "Often", "score": 0, "tags": ["external_pressure"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "committed_q20",
+        "category": "committed",
+        "text": "How well do you support each other's career goals?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Very supportive", "score": 4, "tags": ["career_support"]},
+          {"id": "o2", "label": "Mostly supportive", "score": 3, "tags": ["career_support"]},
+          {"id": "o3", "label": "Sometimes", "score": 2, "tags": ["career_support"]},
+          {"id": "o4", "label": "Rarely supportive", "score": 1, "tags": ["career_support"]},
+          {"id": "o5", "label": "Not supportive", "score": 0, "tags": ["career_support"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "committed_q21",
+        "category": "committed",
+        "text": "What is the single biggest thing you want to improve?",
+        "ui": "text",
+        "options": [],
+        "weight": 0,
+        "required": false,
+        "follow_up": null,
+        "crisis": false,
+        "help_text": "Optional - short answer (max 80 characters)"
+      }
+    ],
+    "engaged": [
+      {
+        "id": "engaged_q4",
+        "category": "engaged",
+        "text": "How aligned are you on having children (timing, number)?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Fully aligned", "score": 4, "tags": ["kids_alignment"]},
+          {"id": "o2", "label": "Mostly", "score": 3, "tags": ["kids_alignment"]},
+          {"id": "o3", "label": "Undecided", "score": 2, "tags": ["kids_alignment"]},
+          {"id": "o4", "label": "Different plans", "score": 1, "tags": ["kids_alignment"]},
+          {"id": "o5", "label": "Opposed", "score": 0, "tags": ["kids_alignment"]}
+        ],
+        "weight": 1.5,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "engaged_q5",
+        "category": "engaged",
+        "text": "How do you handle wedding planning stress?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Work as team", "score": 4, "tags": ["stress_management"]},
+          {"id": "o2", "label": "Mostly team", "score": 3, "tags": ["stress_management"]},
+          {"id": "o3", "label": "Sometimes fights", "score": 2, "tags": ["stress_management"]},
+          {"id": "o4", "label": "Often blame", "score": 1, "tags": ["stress_management"]},
+          {"id": "o5", "label": "Separate efforts", "score": 0, "tags": ["stress_management"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "engaged_q6",
+        "category": "engaged",
+        "text": "How do your families influence your decisions?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Supportive", "score": 4, "tags": ["family_influence"]},
+          {"id": "o2", "label": "Neutral", "score": 3, "tags": ["family_influence"]},
+          {"id": "o3", "label": "Some pressure", "score": 2, "tags": ["family_influence"]},
+          {"id": "o4", "label": "Strong pressure", "score": 1, "tags": ["family_influence"]},
+          {"id": "o5", "label": "Hostile", "score": 0, "tags": ["family_influence"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "engaged_q7",
+        "category": "engaged",
+        "text": "Are finances (savings, debt) discussed openly?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Yes, clear", "score": 4, "tags": ["financial_transparency"]},
+          {"id": "o2", "label": "Some", "score": 3, "tags": ["financial_transparency"]},
+          {"id": "o3", "label": "Rarely", "score": 2, "tags": ["financial_transparency"]},
+          {"id": "o4", "label": "Hidden issues", "score": 0, "tags": ["financial_transparency"]}
+        ],
+        "weight": 1.5,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "engaged_q8",
+        "category": "engaged",
+        "text": "Do you agree on living location after marriage?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Yes", "score": 4, "tags": ["living_plans"]},
+          {"id": "o2", "label": "Mostly", "score": 3, "tags": ["living_plans"]},
+          {"id": "o3", "label": "Undecided", "score": 2, "tags": ["living_plans"]},
+          {"id": "o4", "label": "Different wants", "score": 1, "tags": ["living_plans"]},
+          {"id": "o5", "label": "Opposite", "score": 0, "tags": ["living_plans"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "engaged_q9",
+        "category": "engaged",
+        "text": "How often do you check in about long-term goals?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Monthly", "score": 4, "tags": ["future_alignment"]},
+          {"id": "o2", "label": "Quarterly", "score": 3, "tags": ["future_alignment"]},
+          {"id": "o3", "label": "Rarely", "score": 2, "tags": ["future_alignment"]},
+          {"id": "o4", "label": "Only when necessary", "score": 1, "tags": ["future_alignment"]},
+          {"id": "o5", "label": "Never", "score": 0, "tags": ["future_alignment"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "engaged_q10",
+        "category": "engaged",
+        "text": "Do you feel your partner respects your family or cultural needs?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Yes", "score": 4, "tags": ["cultural_respect"]},
+          {"id": "o2", "label": "Mostly", "score": 3, "tags": ["cultural_respect"]},
+          {"id": "o3", "label": "Some friction", "score": 2, "tags": ["cultural_respect"]},
+          {"id": "o4", "label": "No", "score": 0, "tags": ["cultural_respect"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "engaged_q11",
+        "category": "engaged",
+        "text": "How do you plan childcare/parenting roles?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Clear plan", "score": 4, "tags": ["parenting"]},
+          {"id": "o2", "label": "Mostly agreed", "score": 3, "tags": ["parenting"]},
+          {"id": "o3", "label": "Undecided", "score": 2, "tags": ["parenting"]},
+          {"id": "o4", "label": "Conflict", "score": 1, "tags": ["parenting"]},
+          {"id": "o5", "label": "Opposite", "score": 0, "tags": ["parenting"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "engaged_q12",
+        "category": "engaged",
+        "text": "How often do you feel understood in goals for career + relationship balance?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Always", "score": 4, "tags": ["work_life_balance"]},
+          {"id": "o2", "label": "Often", "score": 3, "tags": ["work_life_balance"]},
+          {"id": "o3", "label": "Sometimes", "score": 2, "tags": ["work_life_balance"]},
+          {"id": "o4", "label": "Rarely", "score": 1, "tags": ["work_life_balance"]},
+          {"id": "o5", "label": "Never", "score": 0, "tags": ["work_life_balance"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "engaged_q13",
+        "category": "engaged",
+        "text": "Have you discussed long-term finances: joint savings, retirement?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Yes, full plan", "score": 4, "tags": ["finance_planning"]},
+          {"id": "o2", "label": "Some plan", "score": 3, "tags": ["finance_planning"]},
+          {"id": "o3", "label": "Discussed lightly", "score": 2, "tags": ["finance_planning"]},
+          {"id": "o4", "label": "Not at all", "score": 0, "tags": ["finance_planning"]}
+        ],
+        "weight": 1.5,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "engaged_q14",
+        "category": "engaged",
+        "text": "What's your darkest fear about getting married to them?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "No fears - I'm completely confident", "score": 4, "tags": ["confidence", "no_fear"]},
+          {"id": "o2", "label": "We'll become boring and lose our spark", "score": 2, "tags": ["passion_loss"]},
+          {"id": "o3", "label": "They'll stop trying to impress me", "score": 1, "tags": ["effort_decline"]},
+          {"id": "o4", "label": "I'll discover something that changes everything", "score": 0, "tags": ["hidden_truth_fear"]},
+          {"id": "o5", "label": "I'm making a huge mistake", "score": 0, "tags": ["commitment_fear"]}
+        ],
+        "weight": 1.5,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "engaged_q15",
+        "category": "engaged",
+        "text": "How comfortable are you asking about sensitive topics (in-laws, sex, money)?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Very", "score": 4, "tags": ["openness"]},
+          {"id": "o2", "label": "Mostly", "score": 3, "tags": ["openness"]},
+          {"id": "o3", "label": "Sometimes", "score": 2, "tags": ["openness"]},
+          {"id": "o4", "label": "Rarely", "score": 1, "tags": ["openness"]},
+          {"id": "o5", "label": "Never", "score": 0, "tags": ["openness"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "engaged_q16",
+        "category": "engaged",
+        "text": "Are you both getting pre-marital advice / counseling?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Yes, together", "score": 4, "tags": ["counseling"]},
+          {"id": "o2", "label": "One of us", "score": 2, "tags": ["counseling"]},
+          {"id": "o3", "label": "No", "score": 0, "tags": ["counseling"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "engaged_q17",
+        "category": "engaged",
+        "text": "How often do arguments turn to long-term doubts?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Never", "score": 4, "tags": ["stability"]},
+          {"id": "o2", "label": "Rarely", "score": 3, "tags": ["stability"]},
+          {"id": "o3", "label": "Sometimes", "score": 2, "tags": ["stability"]},
+          {"id": "o4", "label": "Often", "score": 1, "tags": ["stability"]},
+          {"id": "o5", "label": "Constantly", "score": 0, "tags": ["stability"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "engaged_q18",
+        "category": "engaged",
+        "text": "Do you feel your partner's family will accept you?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Yes", "score": 4, "tags": ["family_acceptance"]},
+          {"id": "o2", "label": "Mostly", "score": 3, "tags": ["family_acceptance"]},
+          {"id": "o3", "label": "Unsure", "score": 2, "tags": ["family_acceptance"]},
+          {"id": "o4", "label": "Probably not", "score": 1, "tags": ["family_acceptance"]},
+          {"id": "o5", "label": "No", "score": 0, "tags": ["family_acceptance"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "engaged_q19",
+        "category": "engaged",
+        "text": "How confident are you that both of you will keep working on the relationship after marriage?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Very confident", "score": 4, "tags": ["long_term_commitment"]},
+          {"id": "o2", "label": "Mostly", "score": 3, "tags": ["long_term_commitment"]},
+          {"id": "o3", "label": "Some doubts", "score": 2, "tags": ["long_term_commitment"]},
+          {"id": "o4", "label": "Major doubts", "score": 1, "tags": ["long_term_commitment"]},
+          {"id": "o5", "label": "Not confident", "score": 0, "tags": ["long_term_commitment"]}
+        ],
+        "weight": 1.5,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "engaged_q18",
+        "category": "engaged",
+        "text": "How well do you handle stress together as a team?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Very well", "score": 4, "tags": ["stress_management"]},
+          {"id": "o2", "label": "Pretty well", "score": 3, "tags": ["stress_management"]},
+          {"id": "o3", "label": "Sometimes", "score": 2, "tags": ["stress_management"]},
+          {"id": "o4", "label": "Not well", "score": 1, "tags": ["stress_management"]},
+          {"id": "o5", "label": "We fall apart", "score": 0, "tags": ["stress_management"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "engaged_q19",
+        "category": "engaged",
+        "text": "How aligned are you on personal values and beliefs?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Completely aligned", "score": 4, "tags": ["values_alignment"]},
+          {"id": "o2", "label": "Mostly aligned", "score": 3, "tags": ["values_alignment"]},
+          {"id": "o3", "label": "Some differences", "score": 2, "tags": ["values_alignment"]},
+          {"id": "o4", "label": "Major differences", "score": 1, "tags": ["values_alignment"]},
+          {"id": "o5", "label": "Opposite values", "score": 0, "tags": ["values_alignment"]}
+        ],
+        "weight": 1.5,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "engaged_q20",
+        "category": "engaged",
+        "text": "How do you handle disagreements about the wedding planning?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "We discuss and compromise", "score": 4, "tags": ["wedding_planning"]},
+          {"id": "o2", "label": "Usually work it out", "score": 3, "tags": ["wedding_planning"]},
+          {"id": "o3", "label": "Sometimes argue", "score": 2, "tags": ["wedding_planning"]},
+          {"id": "o4", "label": "Often fight", "score": 1, "tags": ["wedding_planning"]},
+          {"id": "o5", "label": "Major source of stress", "score": 0, "tags": ["wedding_planning"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "engaged_q21",
+        "category": "engaged",
+        "text": "What is your biggest worry about marriage?",
+        "ui": "text",
+        "options": [],
+        "weight": 0,
+        "required": false,
+        "follow_up": null,
+        "crisis": false,
+        "help_text": "Optional - short answer (max 80 characters)"
+      }
+    ],
+    "married": [
+      {
+        "id": "married_q4",
+        "category": "married",
+        "text": "Do you feel your relationship has grown positively over time?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Yes, much growth", "score": 4, "tags": ["growth"]},
+          {"id": "o2", "label": "Some growth", "score": 3, "tags": ["growth"]},
+          {"id": "o3", "label": "Neutral", "score": 2, "tags": ["growth"]},
+          {"id": "o4", "label": "Less growth", "score": 1, "tags": ["growth"]},
+          {"id": "o5", "label": "Declined", "score": 0, "tags": ["growth"]}
+        ],
+        "weight": 1.5,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "married_q5",
+        "category": "married",
+        "text": "How fair is the division of household and parenting work?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Very fair", "score": 4, "tags": ["division_of_labor"]},
+          {"id": "o2", "label": "Mostly fair", "score": 3, "tags": ["division_of_labor"]},
+          {"id": "o3", "label": "Sometimes unfair", "score": 2, "tags": ["division_of_labor"]},
+          {"id": "o4", "label": "Mostly unfair", "score": 1, "tags": ["division_of_labor"]},
+          {"id": "o5", "label": "Very unfair", "score": 0, "tags": ["division_of_labor"]}
+        ],
+        "weight": 1.5,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "married_q6",
+        "category": "married",
+        "text": "How often do you feel physically or emotionally close?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Often", "score": 4, "tags": ["intimacy"]},
+          {"id": "o2", "label": "Sometimes", "score": 3, "tags": ["intimacy"]},
+          {"id": "o3", "label": "Only for kids", "score": 1, "tags": ["intimacy"]},
+          {"id": "o4", "label": "Rarely", "score": 1, "tags": ["intimacy"]},
+          {"id": "o5", "label": "Never", "score": 0, "tags": ["intimacy"]}
+        ],
+        "weight": 1.5,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "married_q7",
+        "category": "married",
+        "text": "Do you have shared hobbies or interests now?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Yes, many", "score": 4, "tags": ["shared_activities"]},
+          {"id": "o2", "label": "Some", "score": 3, "tags": ["shared_activities"]},
+          {"id": "o3", "label": "Rarely", "score": 2, "tags": ["shared_activities"]},
+          {"id": "o4", "label": "None", "score": 1, "tags": ["shared_activities"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "married_q8",
+        "category": "married",
+        "text": "Have you forgiven big hurts and healed properly?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Yes", "score": 4, "tags": ["forgiveness"]},
+          {"id": "o2", "label": "Mostly", "score": 3, "tags": ["forgiveness"]},
+          {"id": "o3", "label": "Some scars", "score": 2, "tags": ["forgiveness"]},
+          {"id": "o4", "label": "Not really", "score": 1, "tags": ["forgiveness"]},
+          {"id": "o5", "label": "Still angry", "score": 0, "tags": ["forgiveness"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "married_q9",
+        "category": "married",
+        "text": "If you could restart your life, would you choose this same person?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Absolutely - without hesitation", "score": 4, "tags": ["true_love", "no_regrets"]},
+          {"id": "o2", "label": "Yes, despite our problems", "score": 3, "tags": ["committed_love"]},
+          {"id": "o3", "label": "I'm honestly not sure", "score": 2, "tags": ["doubt", "uncertainty"]},
+          {"id": "o4", "label": "Probably not, but I'm here now", "score": 1, "tags": ["settling", "resignation"]},
+          {"id": "o5", "label": "Definitely not - I'd choose differently", "score": 0, "tags": ["regret", "wrong_choice"]}
+        ],
+        "weight": 2,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "married_q10",
+        "category": "married",
+        "text": "How open are you about money, retirement, big purchases?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Very open", "score": 4, "tags": ["financial_transparency"]},
+          {"id": "o2", "label": "Mostly", "score": 3, "tags": ["financial_transparency"]},
+          {"id": "o3", "label": "Sometimes hide", "score": 2, "tags": ["financial_transparency"]},
+          {"id": "o4", "label": "Often hide", "score": 0, "tags": ["financial_transparency"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "married_q11",
+        "category": "married",
+        "text": "How do you manage parenting stress together?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Work as team", "score": 4, "tags": ["parenting"]},
+          {"id": "o2", "label": "Mostly team", "score": 3, "tags": ["parenting"]},
+          {"id": "o3", "label": "Mostly one handles", "score": 1, "tags": ["parenting"]},
+          {"id": "o4", "label": "Frequent conflict", "score": 0, "tags": ["parenting"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "married_q12",
+        "category": "married",
+        "text": "Have you kept romance alive (small gestures, dates)?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Often", "score": 4, "tags": ["romance"]},
+          {"id": "o2", "label": "Sometimes", "score": 3, "tags": ["romance"]},
+          {"id": "o3", "label": "Rarely", "score": 1, "tags": ["romance"]},
+          {"id": "o4", "label": "Never", "score": 0, "tags": ["romance"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "married_q13",
+        "category": "married",
+        "text": "How often do you talk about your future goals (10 years)?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Often", "score": 4, "tags": ["future_alignment"]},
+          {"id": "o2", "label": "Sometimes", "score": 3, "tags": ["future_alignment"]},
+          {"id": "o3", "label": "Rarely", "score": 1, "tags": ["future_alignment"]},
+          {"id": "o4", "label": "Never", "score": 0, "tags": ["future_alignment"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "married_q14",
+        "category": "married",
+        "text": "Are there unresolved secrets affecting trust?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "No", "score": 4, "tags": ["trust_history"]},
+          {"id": "o2", "label": "Small", "score": 2, "tags": ["trust_history"]},
+          {"id": "o3", "label": "Big unresolved", "score": 0, "tags": ["trust_history"]}
+        ],
+        "weight": 1.5,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "married_q15",
+        "category": "married",
+        "text": "How well do you share emotional labor (scheduling, school, health)?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Well shared", "score": 4, "tags": ["emotional_labor"]},
+          {"id": "o2", "label": "Mostly shared", "score": 3, "tags": ["emotional_labor"]},
+          {"id": "o3", "label": "One does most", "score": 1, "tags": ["emotional_labor"]},
+          {"id": "o4", "label": "One does all", "score": 0, "tags": ["emotional_labor"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "married_q16",
+        "category": "married",
+        "text": "Do you have individual time and support for interests outside family?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Yes always", "score": 4, "tags": ["individual_space"]},
+          {"id": "o2", "label": "Sometimes", "score": 3, "tags": ["individual_space"]},
+          {"id": "o3", "label": "Rarely", "score": 1, "tags": ["individual_space"]},
+          {"id": "o4", "label": "Never", "score": 0, "tags": ["individual_space"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "married_q17",
+        "category": "married",
+        "text": "Have there been instances of controlling or abusive behaviour?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Never", "score": 4, "tags": ["abuse_risk"]},
+          {"id": "o2", "label": "Once", "score": 2, "tags": ["abuse_risk"]},
+          {"id": "o3", "label": "Sometimes", "score": 1, "tags": ["abuse_risk"]},
+          {"id": "o4", "label": "Yes—ongoing", "score": 0, "tags": ["abuse_risk"], "crisis": true}
+        ],
+        "weight": 1.5,
+        "required": true,
+        "follow_up": {
+          "trigger": "o4",
+          "action": "show_safety_resources"
+        },
+        "crisis": true
+      },
+      {
+        "id": "married_q18",
+        "category": "married",
+        "text": "How satisfied are you with sexual frequency/quality?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Very", "score": 4, "tags": ["sexual_intimacy"]},
+          {"id": "o2", "label": "Mostly", "score": 3, "tags": ["sexual_intimacy"]},
+          {"id": "o3", "label": "Somewhat", "score": 2, "tags": ["sexual_intimacy"]},
+          {"id": "o4", "label": "Rarely", "score": 1, "tags": ["sexual_intimacy"]},
+          {"id": "o5", "label": "Not at all", "score": 0, "tags": ["sexual_intimacy"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "married_q19",
+        "category": "married",
+        "text": "How often do you plan for retirement, health care, long-term care?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Regularly", "score": 4, "tags": ["long_term_planning"]},
+          {"id": "o2", "label": "Occasionally", "score": 3, "tags": ["long_term_planning"]},
+          {"id": "o3", "label": "Rarely", "score": 1, "tags": ["long_term_planning"]},
+          {"id": "o4", "label": "Never", "score": 0, "tags": ["long_term_planning"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "married_q18",
+        "category": "married",
+        "text": "How well do you balance couple time vs individual time?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Perfect balance", "score": 4, "tags": ["balance"]},
+          {"id": "o2", "label": "Good balance", "score": 3, "tags": ["balance"]},
+          {"id": "o3", "label": "Sometimes unbalanced", "score": 2, "tags": ["balance"]},
+          {"id": "o4", "label": "Often unbalanced", "score": 1, "tags": ["balance"]},
+          {"id": "o5", "label": "No balance", "score": 0, "tags": ["balance"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "married_q19",
+        "category": "married",
+        "text": "How do you handle extended family relationships together?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Very well", "score": 4, "tags": ["family_relations"]},
+          {"id": "o2", "label": "Pretty well", "score": 3, "tags": ["family_relations"]},
+          {"id": "o3", "label": "Some challenges", "score": 2, "tags": ["family_relations"]},
+          {"id": "o4", "label": "Often difficult", "score": 1, "tags": ["family_relations"]},
+          {"id": "o5", "label": "Major source of conflict", "score": 0, "tags": ["family_relations"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "married_q20",
+        "category": "married",
+        "text": "How do you maintain excitement and novelty in your relationship?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Always trying new things", "score": 4, "tags": ["novelty"]},
+          {"id": "o2", "label": "Sometimes", "score": 3, "tags": ["novelty"]},
+          {"id": "o3", "label": "Rarely", "score": 2, "tags": ["novelty"]},
+          {"id": "o4", "label": "We don't", "score": 1, "tags": ["novelty"]},
+          {"id": "o5", "label": "Stuck in routine", "score": 0, "tags": ["novelty"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "married_q21",
+        "category": "married",
+        "text": "What would improve your daily married life most?",
+        "ui": "text",
+        "options": [],
+        "weight": 0,
+        "required": false,
+        "follow_up": null,
+        "crisis": false,
+        "help_text": "Optional - short answer (max 80 characters)"
+      }
+    ],
+    "recently_ended": [
+      {
+        "id": "ended_q4",
+        "category": "recently_ended",
+        "text": "Who ended the relationship?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "I did", "score": 3, "tags": ["breakup_initiator"]},
+          {"id": "o2", "label": "They did", "score": 3, "tags": ["breakup_initiator"]},
+          {"id": "o3", "label": "Mutual", "score": 4, "tags": ["breakup_initiator"]},
+          {"id": "o4", "label": "It was complicated", "score": 2, "tags": ["breakup_initiator"]}
+        ],
+        "weight": 0.5,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "ended_q5",
+        "category": "recently_ended",
+        "text": "How long since the breakup?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Less than 2 weeks", "score": 0, "tags": ["time_since_breakup"]},
+          {"id": "o2", "label": "2-6 weeks", "score": 1, "tags": ["time_since_breakup"]},
+          {"id": "o3", "label": "1-6 months", "score": 2, "tags": ["time_since_breakup"]},
+          {"id": "o4", "label": "6-12 months", "score": 3, "tags": ["time_since_breakup"]},
+          {"id": "o5", "label": "12+ months", "score": 4, "tags": ["time_since_breakup"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "ended_q6",
+        "category": "recently_ended",
+        "text": "What was the main reason?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Growing apart", "score": 2, "tags": ["growing_apart"]},
+          {"id": "o2", "label": "Infidelity/Cheating", "score": 1, "tags": ["infidelity"], "branch_to": "cheating_branch"},
+          {"id": "o3", "label": "Abuse", "score": 0, "tags": ["abuse"], "crisis": true},
+          {"id": "o4", "label": "Family pressure", "score": 2, "tags": ["external"]},
+          {"id": "o5", "label": "Money", "score": 2, "tags": ["finance"]},
+          {"id": "o6", "label": "Mismatch life goals", "score": 2, "tags": ["goals"]},
+          {"id": "o7", "label": "Other", "score": 2, "tags": ["other"]}
+        ],
+        "weight": 1.5,
+        "required": true,
+        "follow_up": {
+          "trigger": "o3",
+          "action": "show_safety_resources"
+        },
+        "crisis": false
+      },
+      {
+        "id": "ended_q7",
+        "category": "recently_ended",
+        "text": "Was communication a major issue?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "No major issue", "score": 4, "tags": ["communication"]},
+          {"id": "o2", "label": "Small issues", "score": 3, "tags": ["communication"]},
+          {"id": "o3", "label": "Frequent problems", "score": 1, "tags": ["communication"]},
+          {"id": "o4", "label": "Always poor", "score": 0, "tags": ["communication"]}
+        ],
+        "weight": 1.5,
+        "required": true,
+        "follow_up": null,
+        "crisis": false,
+        "inverted": true
+      },
+      {
+        "id": "ended_q8",
+        "category": "recently_ended",
+        "text": "Did trust break (cheating, lies)?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "No", "score": 4, "tags": ["trust_history"]},
+          {"id": "o2", "label": "Small lies but fixed", "score": 2, "tags": ["trust_history"]},
+          {"id": "o3", "label": "Major betrayal", "score": 0, "tags": ["trust_history"]}
+        ],
+        "weight": 1.5,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "ended_q9",
+        "category": "recently_ended",
+        "text": "After breakup, how often do you have contact with them?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "No contact", "score": 4, "tags": ["post_contact"]},
+          {"id": "o2", "label": "Rarely", "score": 3, "tags": ["post_contact"]},
+          {"id": "o3", "label": "Sometimes", "score": 2, "tags": ["post_contact"]},
+          {"id": "o4", "label": "Often", "score": 1, "tags": ["post_contact"]},
+          {"id": "o5", "label": "Constant contact", "score": 0, "tags": ["post_contact"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "ended_q10",
+        "category": "recently_ended",
+        "text": "How much do you think about them daily?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Never", "score": 4, "tags": ["rumination"]},
+          {"id": "o2", "label": "Rarely", "score": 3, "tags": ["rumination"]},
+          {"id": "o3", "label": "Sometimes", "score": 2, "tags": ["rumination"]},
+          {"id": "o4", "label": "Often", "score": 1, "tags": ["rumination"]},
+          {"id": "o5", "label": "Constantly", "score": 0, "tags": ["rumination"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false,
+        "inverted": true
+      },
+      {
+        "id": "ended_q11",
+        "category": "recently_ended",
+        "text": "Do you feel safe now (physically / emotionally)?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Yes", "score": 4, "tags": ["safety"]},
+          {"id": "o2", "label": "Mostly", "score": 3, "tags": ["safety"]},
+          {"id": "o3", "label": "Not sure", "score": 1, "tags": ["safety"]},
+          {"id": "o4", "label": "No", "score": 0, "tags": ["safety"], "crisis": true}
+        ],
+        "weight": 1.5,
+        "required": true,
+        "follow_up": {
+          "trigger": "o4",
+          "action": "show_safety_resources"
+        },
+        "crisis": true
+      },
+      {
+        "id": "ended_q12",
+        "category": "recently_ended",
+        "text": "Do you regret the breakup or want to reconcile?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "No", "score": 4, "tags": ["reconciliation_interest"]},
+          {"id": "o2", "label": "Unsure", "score": 2, "tags": ["reconciliation_interest"]},
+          {"id": "o3", "label": "Yes, a little", "score": 1, "tags": ["reconciliation_interest"]},
+          {"id": "o4", "label": "Yes, strongly", "score": 0, "tags": ["reconciliation_interest"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "ended_q13",
+        "category": "recently_ended",
+        "text": "Have you learned clear lessons about what went wrong?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Yes, many", "score": 4, "tags": ["insight"]},
+          {"id": "o2", "label": "Some", "score": 3, "tags": ["insight"]},
+          {"id": "o3", "label": "Not yet", "score": 1, "tags": ["insight"]},
+          {"id": "o4", "label": "No lessons", "score": 0, "tags": ["insight"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "ended_q14",
+        "category": "recently_ended",
+        "text": "Are you taking steps to feel better (therapy, friends, new hobby)?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Yes, active", "score": 4, "tags": ["healing_actions"]},
+          {"id": "o2", "label": "Some", "score": 3, "tags": ["healing_actions"]},
+          {"id": "o3", "label": "Trying", "score": 2, "tags": ["healing_actions"]},
+          {"id": "o4", "label": "Not yet", "score": 0, "tags": ["healing_actions"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "ended_q15",
+        "category": "recently_ended",
+        "text": "Is the breakup affecting your daily function (work, sleep, eating)?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Not at all", "score": 4, "tags": ["functioning"]},
+          {"id": "o2", "label": "Slightly", "score": 3, "tags": ["functioning"]},
+          {"id": "o3", "label": "Moderately", "score": 2, "tags": ["functioning"]},
+          {"id": "o4", "label": "Severely", "score": 0, "tags": ["functioning"]}
+        ],
+        "weight": 1.5,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "ended_q16",
+        "category": "recently_ended",
+        "text": "Did you notice patterns repeated from past relationships?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "No", "score": 4, "tags": ["pattern_repeat"]},
+          {"id": "o2", "label": "One pattern", "score": 2, "tags": ["pattern_repeat"]},
+          {"id": "o3", "label": "Yes repeated problems", "score": 0, "tags": ["pattern_repeat"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "ended_q17",
+        "category": "recently_ended",
+        "text": "Did either of you use controlling or gaslighting behavior?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Never", "score": 4, "tags": ["abuse_risk"]},
+          {"id": "o2", "label": "Rarely", "score": 3, "tags": ["abuse_risk"]},
+          {"id": "o3", "label": "Sometimes", "score": 1, "tags": ["abuse_risk"]},
+          {"id": "o4", "label": "Often", "score": 0, "tags": ["abuse_risk"], "crisis": true}
+        ],
+        "weight": 1.5,
+        "required": true,
+        "follow_up": {
+          "trigger": "o4",
+          "action": "show_safety_resources"
+        },
+        "crisis": true
+      },
+      {
+        "id": "ended_q18",
+        "category": "recently_ended",
+        "text": "Are you ready to date again (emotionally)?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Yes", "score": 4, "tags": ["readiness"]},
+          {"id": "o2", "label": "Maybe soon", "score": 3, "tags": ["readiness"]},
+          {"id": "o3", "label": "Not yet", "score": 1, "tags": ["readiness"]},
+          {"id": "o4", "label": "No", "score": 0, "tags": ["readiness"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "ended_q19",
+        "category": "recently_ended",
+        "text": "Have you reflected on your role in the breakup?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Yes, clearly", "score": 4, "tags": ["self_reflection"]},
+          {"id": "o2", "label": "Some reflection", "score": 3, "tags": ["self_reflection"]},
+          {"id": "o3", "label": "Not really", "score": 1, "tags": ["self_reflection"]},
+          {"id": "o4", "label": "No blame accepted", "score": 0, "tags": ["self_reflection"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "ended_q18",
+        "category": "recently_ended",
+        "text": "How do you feel about dating again in the future?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Excited and ready", "score": 4, "tags": ["future_readiness"]},
+          {"id": "o2", "label": "Open to it", "score": 3, "tags": ["future_readiness"]},
+          {"id": "o3", "label": "Not sure yet", "score": 2, "tags": ["future_readiness"]},
+          {"id": "o4", "label": "Not interested", "score": 1, "tags": ["future_readiness"]},
+          {"id": "o5", "label": "Never again", "score": 0, "tags": ["future_readiness"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "ended_q19",
+        "category": "recently_ended",
+        "text": "How has your support system been during this time?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Very supportive", "score": 4, "tags": ["support_system"]},
+          {"id": "o2", "label": "Mostly supportive", "score": 3, "tags": ["support_system"]},
+          {"id": "o3", "label": "Some support", "score": 2, "tags": ["support_system"]},
+          {"id": "o4", "label": "Little support", "score": 1, "tags": ["support_system"]},
+          {"id": "o5", "label": "No support", "score": 0, "tags": ["support_system"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "ended_q20",
+        "category": "recently_ended",
+        "text": "How confident do you feel about your ability to have healthy relationships in the future?",
+        "ui": "radio",
+        "options": [
+          {"id": "o1", "label": "Very confident", "score": 4, "tags": ["future_confidence"]},
+          {"id": "o2", "label": "Mostly confident", "score": 3, "tags": ["future_confidence"]},
+          {"id": "o3", "label": "Somewhat confident", "score": 2, "tags": ["future_confidence"]},
+          {"id": "o4", "label": "Not very confident", "score": 1, "tags": ["future_confidence"]},
+          {"id": "o5", "label": "No confidence", "score": 0, "tags": ["future_confidence"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "ended_q21",
+        "category": "recently_ended",
+        "text": "What will help you move on?",
+        "ui": "text",
+        "options": [],
+        "weight": 0,
+        "required": false,
+        "follow_up": null,
+        "crisis": false,
+        "help_text": "Optional - short answer (max 80 characters)"
+      }
+    ]
+  },
+  "branching_questions": {
+    "cheating_branch": [
+      {
+        "id": "cheat_q1",
+        "category": "cheating",
+        "text": "Who was unfaithful?",
+        "ui": "radio",
+        "options": [
+          {"id": "they_cheated", "label": "They cheated on me", "score": 1, "tags": ["betrayed"]},
+          {"id": "i_cheated", "label": "I cheated on them", "score": 0, "tags": ["cheater"]},
+          {"id": "both_cheated", "label": "We both cheated", "score": 0, "tags": ["mutual_cheating"]},
+          {"id": "emotional_affair", "label": "Emotional affair (not physical)", "score": 2, "tags": ["emotional_cheating"]}
+        ],
+        "weight": 1.5,
+        "required": true,
+        "follow_up": null,
+        "crisis": false
+      },
+      {
+        "id": "cheat_q2", 
+        "category": "cheating",
+        "text": "How did you discover the truth?",
+        "ui": "radio",
+        "options": [
+          {"id": "caught_red_handed", "label": "Caught them in the act", "score": 0, "tags": ["discovery_trauma"]},
+          {"id": "found_evidence", "label": "Found messages/evidence", "score": 1, "tags": ["detective_work"]},
+          {"id": "they_confessed", "label": "They confessed", "score": 3, "tags": ["honesty"]},
+          {"id": "someone_told_me", "label": "Someone else told me", "score": 1, "tags": ["third_party"]}
+        ],
+        "weight": 1,
+        "required": true,
+        "follow_up": null,
+        "crisis": false,
+        "show_if_previous": ["they_cheated", "both_cheated", "emotional_affair"]
+      }
+    ]
+  }
+}
